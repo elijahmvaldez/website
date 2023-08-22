@@ -1,1 +1,265 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+
+    <link rel="icon" type="image/png" href="img/flower.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/flower.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/flower.png" />
+    <link rel="apple-touch-icon" sizes="256x256" href="img/flower.png" />
+
+    <meta name="keywords" content="elijahmvaldez, music, alternative, independent, texas">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-title" content="Elijah Valdez" />
+
+    <meta property="og:title" content="Elijah Valdez" />
+    <meta property="og:url" content="https://elijahmvaldez.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://elijahmvaldez.com/embed-img.png" />
+    <meta property="og:description" content="Songs for Next Season." />
+
+    <meta name="description" content="Go back to main site." />
+    <meta name="robots" content="index, follow" />
+    <meta name="http-equiv" content="X-Robots-Tag : index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <meta name="twitter:card" content="summary" />
+</head>
+
+<body>
+    <nav>
+        <a id="burger-icon" hidden><i class="fa-solid fa-bars"></i></a>
+        <a id="x-icon" hidden><i class="fa-solid fa-times"></i></a>
+
+        <a href="https://shop.elijahmvaldez.com" id="nav">SHOP</a>
+        <a href="https://ffm.to/ilovethisep" id="nav">STREAM</a>
+
+        <a href="/" id="nav-img"><img src="img/flower.png"></a>
+
+        <a href="/lyrics" id="nav">LYRICS</a>
+        <a href="/watch" id="nav">WATCH</a>
+    </nav>
+
+    <div class="center-img">
+        <a href="https://elijahmvaldez.com" target="_blank"><img src="img/404-sfns.png" width="400" height="300"></a>
+    </div>
+
+    <footer>
+        <a href="https://twitter.com/elijahmvaldez" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/elijahmvaldez/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/elijahmvaldez" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://music.apple.com/us/artist/elijah-valdez/1583171428" target="_blank"><i class="fa-brands fa-apple"></i></a>
+        <a href="https://open.spotify.com/artist/18SYMZu7DqrDBqxUTYvjGz" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+        <br>
+        © <span id="current-year"></span> Elijah Valdez. All rights reserved.</a>
+    </footer>
+</body>
+
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+
+    @font-face {
+        font-family: 'Hoefler Text';
+        src: url("/hoefler_text.otf") format("opentype");
+        font-style: normal;
+    }
+
+    html {
+        background-color: black;
+    }
+
+    nav {
+        text-align: center;
+        color: #ffdec9;
+        font-family: Arimo;
+        font-weight: 700;
+        font-size: 25px;
+        padding-top: 30px;
+    }
+
+    nav a {
+        color: #ffdec9;
+        text-decoration: none;
+        padding: 25px;
+    }
+
+    nav a:hover {
+        color: #a38484;
+        text-decoration: underline;
+    }
+
+    #nav-img img {
+        display: inline-block;
+        vertical-align: middle;
+        width: 125px;
+        height: 125px;
+    }
+
+    #burger-icon i {
+        position: absolute;
+        padding-top: 45px;
+        padding-right: 25px;
+        top: 0;
+        right: 0;
+    }
+
+    #x-icon i {
+        position: absolute;
+        padding-top: 45px;
+        padding-right: 25px;
+        top: 0;
+        right: 0;
+    }
+
+    /* Vertically and horizontally center the "center-img" class */
+    .center-img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    @media only screen and (max-width: 600px) {
+        .center-img img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    i {
+        color: #ffdec9;
+        font-size: 40px;
+        padding: 80px 20px;
+    }
+
+    i:hover {
+        color: #a38484;
+    }
+
+    @media only screen and (max-width: 600px) {
+        i {
+            font-size: 40px;
+            padding: 80px 10px;
+        }
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #ffdec9;
+        font-family: 'Hoefler Text';
+        font-size: 16px;
+        padding-bottom: 25px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        footer {
+            font-size: 12px;
+            padding-bottom: 15px;
+        }
+    }
+
+    .footer-link {
+        color: #ffdec9;
+        text-decoration: underline;
+    }
+</style>
+
+<script type="text/javascript">
+    // Set the current year in the footer
+    document.getElementById("current-year").innerHTML = new Date().getFullYear();
+
+    // When the user is on a mobile device, change the navbar to a hamburger menu
+    if (window.innerWidth <= 600) {
+        // There are multiple elements with the "nav" ID, so we need to loop through them and hide them
+        var navElements = document.querySelectorAll("#nav");
+            for (var i = 0; i < navElements.length; i++) {
+                navElements[i].style.display = "none";
+            }
+        // Get nav-img
+        var navImg = document.getElementById("nav-img");
+        var img = navImg.querySelector("img");
+        // Remove the parent of the "nav-img" element, which is defined as "navImg"
+        navImg.style.padding = "0";
+        // Now we need to move the "nav-img" element to the left side of the screen and size it down
+        img.style.position = "absolute";
+        img.style.left = "0";
+        img.style.top = "0";
+        img.style.padding = "25px";
+        img.style.width = "75px";
+        img.style.height = "75px";
+
+        // Define the "x" icon
+        var xIcon = document.getElementById("x-icon");
+
+        // Now we can show the hamburger menu
+        var burgerIcon = document.getElementById("burger-icon");
+        burgerIcon.style.display = "block";
+
+
+        // When the user clicks the hamburger menu, show the nav elements
+        burgerIcon.addEventListener("click", function() {
+            // Show the nav elements
+            for (var i = 0; i < navElements.length; i++) {
+                navElements[i].style.display = "block";
+            }
+
+            // Calculate the amount of padding needed dependant on the phone height
+            // This will allow it to center consistently across mobile devices
+            var nav = document.getElementsByTagName("nav")[0]
+            var navHeight = nav.offsetHeight;
+            var padHeight = (window.innerHeight - navHeight)/2;
+            nav.style.paddingTop = padHeight + "px";
+
+            // Fade out the background elements
+            var pageElements = document.querySelectorAll("body > *:not(nav)");
+            for (var i = 0; i < pageElements.length; i++) {
+                pageElements[i].style.pointerEvents = "none";
+                pageElements[i].style.transition = "all 0.3s";
+                pageElements[i].style.opacity = "0";
+            }
+
+            // Hide the hamburger menu
+            burgerIcon.style.display = "none";
+            // Show the "x" icon
+            xIcon.style.display = "block";
+        });
+
+        // When the user clicks the "x" icon, hide the nav elements
+        xIcon.addEventListener("click", function() {
+            // Hide the nav elements
+            for (var i = 0; i < navElements.length; i++) {
+                navElements[i].style.display = "none";
+            }
+
+            // Reset the padding
+            var nav = document.getElementsByTagName("nav")[0];
+            nav.style.paddingTop = "30px";
+
+            // Re-fade in the background elements
+            var pageElements = document.querySelectorAll("body > *:not(nav)");
+            for (var i = 0; i < pageElements.length; i++) {
+                pageElements[i].style.pointerEvents = "auto";
+                pageElements[i].style.transition = "all 0.3s";
+                pageElements[i].style.opacity = "1";
+            }
+
+            // Hide the "x" icon
+            xIcon.style.display = "none";
+            // Show the hamburger menu
+            burgerIcon.style.display = "block";
+        });
+    }
+</script>
