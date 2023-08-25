@@ -360,9 +360,11 @@
             // If the song lyrics are hidden, show them
             if (songLyrics.style.display === "none") {
                 songLyrics.style.display = "block";
+                songLyrics.style.paddingBottom = "95px";
                 checkFooter();
             } else {
                 songLyrics.style.display = "none";
+                songLyrics.style.paddingBottom = "95px";
                 checkFooter();
             }
         });
