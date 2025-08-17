@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/img/face.png" />
     <link rel="apple-touch-icon" sizes="256x256" href="/img/face.png" />
 
-    <meta name="keywords" content="elijahmvaldez, art, music, alternative, independent, denton, texas">
+    <meta name="keywords" content="elijahmvaldez, music, alternative, independent, texas">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#070419" />
     <meta name="apple-mobile-web-app-title" content="Elijah Valdez" />
@@ -110,22 +110,6 @@
         right: 0;
     }
 
-    /* Vertically and horizontally center the "center-img" class */
-    .center-img {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-
-    @media only screen and (max-width: 600px) {
-        .center-img img {
-            width: 300px;
-            height: 300px;
-        }
-    }
-
     i {
         color: #3f3b2f;
         font-size: 40px;
@@ -143,8 +127,26 @@
         }
     }
 
+    iframe {
+        width: 55%;
+        aspect-ratio: 16/9;
+        border: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 75px;
+        padding-bottom: 25px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        iframe {
+            width: 80%;
+            padding-top: 20px;
+        }
+    }
+
     footer {
-        position: absolute;
+        position: relative;
         bottom: 0;
         left: 0;
         right: 0;
